@@ -7,7 +7,7 @@ function checkTicker() {
 		var jsonresponse=JSON.parse(ticker.responseText);
 		for (i=0;i<jsonresponse.length;i++) {
 			if (jsonresponse[i]['id']=='zcash') {
-				chrome.extension.getBackgroundPage().console.log(window.navigator.language);
+				//chrome.extension.getBackgroundPage().console.log(window.navigator.language);
 				var zcash_btc=jsonresponse[i]['price_btc'];
 				var zcash_usd=jsonresponse[i]['price_usd'];
 				var zcash_percent1h=jsonresponse[i]['percent_change_1h'];
